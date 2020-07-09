@@ -46,8 +46,17 @@ if (!$val) {
    // ログインできたら情報をsession領域に保存して一覧ページへ移動
    $_SESSION = array(); // セッション変数を空にする 
    $_SESSION["session_id"] = session_id();
-   $_SESSION["is_admin"] = $val["is_admin"];
+   $_SESSION["id"] = $val["id"];
+   $_SESSION["name"] = $val["name"];
+   $_SESSION["kana"] = $val["kana"];
+   $_SESSION["sex"] = $val["sex"];
+   $_SESSION["birthday"] = $val["birthday"];
    $_SESSION["username"] = $val["username"];
+   $_SESSION["password"] = $val["password"];
+   $_SESSION["is_dentist"] = $val["is_dentist"];
+   $_SESSION["is_technician"] = $val["is_technician"];
+   $_SESSION["is_admin"] = $val["is_admin"];
+   $_SESSION["is_deleted"] = $val["is_deleted"];   
 
    if($val["is_dentist"] == 1){
       header("Location:dentist_top.php");

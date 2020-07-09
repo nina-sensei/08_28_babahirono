@@ -14,6 +14,19 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 $job = $_POST["job"];
 
+// 値が存在しないor空で送信されてきた場合はNGにする
+if (
+   !isset($name) || $name == "" ||
+   !isset($kana) || $kana == "" ||
+   !isset($sex) || $sex == "" ||
+   !isset($birthday) || $birthday == "" ||
+   !isset($username) || $username == "" ||
+   !isset($password) || $password == "" ||
+   !isset($job) || $job == ""
+) {
+   exit("ParamError");
+}
+
 // $dentist = isset($_POST["dentist"]) ? $_POST["dentist"] : 0;
 // $technician = isset($_POST["technician"]) ? $_POST["technician"] : 0;
 

@@ -15,7 +15,9 @@ check_session_id();
 
 <body>
    <h1>技工士top</h1>
-   <a href="logout.php">Sign Out</a>
+   <p>こんにちは！<?= $_SESSION["name"] ?>さん</p>
+   <a href="mypage.php">My page</a>
+   <a href="logout.php">Sign out</a>
 </body>
 
 </html>
