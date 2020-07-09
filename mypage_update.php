@@ -53,7 +53,7 @@ if ($status == false) {
 //    echo '<a href="mypage.php">My page</a>';
 //    exit();
 // } else {
-//    //セッションに新しく代入
+   //セッションに新しく代入
 //    $_SESSION = array(); // セッション変数を空にする 
 //    $_SESSION["session_id"] = session_id();
 //    $_SESSION["name"] = $val["name"];
@@ -62,14 +62,14 @@ if ($status == false) {
 //    $_SESSION["birthday"] = $val["birthday"];
 //    $_SESSION["username"] = $val["username"];
 //    $_SESSION["password"] = $val["password"];
-   // $_SESSION["is_dentist"] = $val["is_dentist"];
-   // $_SESSION["is_technician"] = $val["is_technician"];
-   // $_SESSION["is_admin"] = $val["is_admin"];
-   // $_SESSION["is_deleted"] = $val["is_deleted"];
+//    $_SESSION["is_dentist"] = $val["is_dentist"];
+//    $_SESSION["is_technician"] = $val["is_technician"];
+//    $_SESSION["is_admin"] = $val["is_admin"];
+//    $_SESSION["is_deleted"] = $val["is_deleted"];
 
-   // 正常にSQLが実行された場合は一覧ページファイルに移動し，一覧ページの処理を実行する
+//    // 正常にSQLが実行された場合は一覧ページファイルに移動し，一覧ページの処理を実行する
    header("Location:mypage.php");
    exit();
-}
-
 // }
+
+}
